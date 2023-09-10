@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grades</title>
+    <style>
+        .column {
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 1ST COLUMN -->
+<div class="column">
+<ul>
+    <li><a href="./profile/index.html">Account</a></li>
+    <li><a href="#">Dashboard</a></li>
+    <li><a href="home.html">Courses</a></li>
+    <li><a href="#">Calendar</a></li>
+    <li><a href="#">Inbox</a></li>
+    <li><a href="#">History</a></li>
+    <li><a href="#">Studio</a></li>
+    <li><a href="#">Commons</a></li>
+    <li><a href="#">Help</a></li>
+</ul>
+</div>
+
+<!-- 2ND COLUMN -->
+<div class="column">
+<ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="#">Modules</a></li>
+    <li><a href="#">Piazza</a></li>
+    <li><a href="#">Zoom Meetings</a></li>
+    <li><a href="./assignments/index.html">Assignments</a></li>
+    <li><a href="#">Quizzes</a></li>
+    <li><a href="grades.html">Grades</a></li>
+    <li><a href="#">People</a></li>
+    <li><a href="#">Panopto Video</a></li>
+    <li><a href="#">Discussions</a></li>
+    <li><a href="#">Announcements</a></li>
+    <li><a href="#">Pages</a></li>
+    <li><a href="#">Files</a></li>
+    <li><a href="#">Rubrics</a></li>
+    <li><a href="#">Outcomes</a></li>
+    <li><a href="#">Collaborations</a></li>
+    <li><a href="#">Syllabus</a></li>
+    <li><a href="#">Settings</a></li>
+</ul>
+</div>
+
+<!-- 3RD COLUMN -->
+<div class="column">
+
+<select id="dropdown-1">
+    <option value="GRADEBOOK">Gradebook</option>
+</select>
+<button type="button">Import</button>
+<select id="dropdown-2">
+    <option value="EXPORT">Export</option>
+</select>
+<button type="button">Configure</button>
+
+<h2>Student Names</h2>
+<input id="student-names" placeholder="Search Students"/>
+<h2>Assignment Names</h2>
+<input id="assignment-names" placeholder="Search Assignments"/>
+<br><br>
+<button type="button">Apply Filters</button>
+<br><br>
+
+<table border="1" width="100%">
+    <tr>
+        <th>Student Name</th>
+        <th>A1 SETUP<br>Out of 100</th>
+        <th>A2 HTML<br>Out of 100</th>
+        <th>A3 CSS<br>Out of 100</th>
+        <th>A4 BOOTSTRAP<br>Out of 100</th>
+        <th>A5 JAVASCRIPT<br>Out of 100</th>
+        <th>A6 REACT<br>Out of 100</th>
+        <th>A7 REDUX<br>Out of 100</th>
+        <th>A8 NODE<br>Out of 100</th>
+        <th>A9 MONGO<br>Out of 100</th>
+    </tr>
+    <tr>
+        <td>James Smith</td>
+        <td>98</td>
+        <td><input id="grade-1" value=80 style="width: 100px"></td>
+        <td>87</td>
+        <td>86</td>
+        <td>100</td>
+        <td>94</td>
+        <td>85</td>
+        <td><input id="grade-2" value=84 style="width: 100px"></td>
+        <td>92</td>
+    </tr>
+    <tr>
+        <td>Elizabeth Jones</td>
+        <td><input id="grade-3" value=83 style="width: 100px"></td>
+        <td>99</td>
+        <td>94</td>
+        <td>98</td>
+        <td><input id="grade-9" value=86 style="width: 100px"></td>
+        <td>85</td>
+        <td><input id="grade-4" value=86 style="width: 100px"></td>
+        <td>80</td>
+        <td>84</td>
+    </tr>
+    <tr>
+        <td>Manny de la Cruz</td>
+        <td>85</td>
+        <td>89</td>
+        <td>94</td>
+        <td><input id="grade-5" value=83 style="width: 100px"></td>
+        <td>83</td>
+        <td><input id="grade-6" value=84 style="width: 100px"></td>
+        <td>91</td>
+        <td>87</td>
+        <td>96</td>
+    </tr>
+    <tr>
+        <td>Ryu Tanaka</td>
+        <td>81</td>
+        <td>92</td>
+        <td><input id="grade-7" value=82 style="width: 100px"></td>
+        <td>86</td>
+        <td>83</td>
+        <td>84</td>
+        <td>98</td>
+        <td>85</td>
+        <td><input id="grade-8" value=96 style="width: 100px"></td>
+    </tr>
+</table>
+
+</div>
+
+</body>
+</html>
