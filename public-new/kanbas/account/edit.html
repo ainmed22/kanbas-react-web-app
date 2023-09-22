@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+    <link href="../../vendors/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome-free-6.4.2-web/css/all.css" rel="stylesheet"/>
+    <link href="../index.css" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- KANBAS NAVIGATION COLUMN -->
+<div class="list-group kanbas-sidebar kanbas-column">
+    <a href="profile.html" class="list-group-item kanbas-sidebar-selected kanbas-icon-padding">
+        <i class="fa fa-user kanbas-gray"></i><br/>
+        <div class="kanbas-sidebar-text">Account</div>
+    </a>
+    <a href="../dashboard/dashboard.html" class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+        <i class="fa fa-clock kanbas-red"></i><br/>
+        <div class="kanbas-sidebar-text">Dashboard</div>
+    </a>
+    <a href="../courses/home.html" class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+        <i class="fa fa-book kanbas-red"></i><br/>
+        <div class="kanbas-sidebar-text">Courses</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+        <i class="fa fa-calendar kanbas-red"></i><br/>
+        <div class="kanbas-sidebar-text">Calendar</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+        <i class="fa fa-envelope kanbas-red"></i><br/>
+        <div class="kanbas-sidebar-text">Inbox</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+        <i class="fa fa-hourglass kanbas-red"></i><br/>
+        <div class="kanbas-sidebar-text">History</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+        <i class="fa fa-tv kanbas-red"></i><br/>
+        <div class="kanbas-sidebar-text">Studio</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+        <i class="fa fa-tree kanbas-red"></i><br/>
+        <div class="kanbas-sidebar-text">Commons</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-sidebar-unselected kanbas-icon-padding">
+        <i class="fa fa-question kanbas-red"></i><br/>
+        <div class="kanbas-sidebar-text">Help</div>
+    </a>
+</div>
+
+<!-- ACCOUNT NAVIGATION COLUMN -->
+<div class="list-group kanbas-account kanbas-column">
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Notifications</div>
+    </a>
+    <a href="profile.html" class="list-group-item kanbas-black kanbas-account-border">
+        <div class="kanbas-account-selected">Profile</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Files</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Settings</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>ePortfolios</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Shared Content</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>The Hub</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Qwickly Course Tools</div>
+    </a>
+    <a href="#" class="list-group-item kanbas-red kanbas-account-border">
+        <div>Global Announcements</div>
+    </a>
+</div>
+
+<!-- EDIT PROFILE COLUMN -->
+<div class="kanbas-column">
+
+    <h2>Ainel Medado's Profile</h2>
+
+    <hr/>
+    <br/>
+
+    <i class="fa fa-user kanbas-gray kanbas-account-icon"></i>
+    <a href="profile.html">
+        <button type="submit" class="btn kanbas-light-gray-bg float-end">
+            <i class="fa fa-pencil kanbas-gray"></i>
+            Cancel Editing
+        </button>
+    </a>
+
+    <br/>
+    <br/>
+
+    <h6>Name*:</h6>
+    <input id="input-username" class="form-control kanbas-item-width-400" value="Ainel Medado"/>
+
+    <br/>
+
+    <h6>Pronouns:</h6>
+    <select class="form-select kanbas-item-width-200">
+        <option value="NONE">None</option>
+        <option value="HE-HIM">he/him</option>
+        <option value="SHE-HER">she/her</option>
+        <option value="THEY-THEM">they/them</option>
+        <option value="OTHER">Other</option>
+    </select>
+
+    <br/>
+    
+    <h6>Title:</h6>
+    <input id="input-title" class="form-control kanbas-item-width-400"/>
+
+    <br/>
+
+    <h2>Contact</h2>
+    <div>
+        No registered services, you can add some on the
+        <a href="#" class="kanbas-hyperlink">settings</a>
+        page.
+    </div>
+
+    <br/>
+
+    <h2>Biography</h2>
+    <div>
+        <textarea class="form-control" rows="5">Student, Computer Science, Game Development
+        </textarea>
+    </div>
+
+    <br/>
+
+    <h2>Links</h2>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col kanbas-center-heading">
+                <h4>Title</h4>
+            </div>
+            <div class="col kanbas-center-heading">
+                <h4>URL</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input id="input-title" class="form-control" value="YouTube"/>
+            </div>
+            <div class="col">
+                <input id="input-url" class="form-control" value=""/>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+
+    <button type="submit" class="btn kanbas-light-gray-bg">
+        Add another link
+    </button>
+
+    <hr/>
+
+    <a href="profile.html" class="kanbas-no-underline">
+        <button type="submit" class="btn kanbas-light-gray-bg">
+            Cancel
+        </button>
+    </a>
+    <a href="profile.html" class="kanbas-no-underline">
+        <button type="submit" class="btn kanbas-save-profile">
+            Save Profile
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>

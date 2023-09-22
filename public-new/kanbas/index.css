@@ -1,0 +1,236 @@
+.kanbas-gray {
+    color: #acabac;
+}
+
+.kanbas-red {
+    color: #d41a2d;
+}
+
+.kanbas-black {
+    color: black;
+}
+
+.kanbas-green {
+    color: #06874a;
+}
+
+.kanbas-light-green {
+    color: #09cb6f;
+}
+
+.kanbas-light-gray {
+    color: #f5f5f5;
+}
+
+.kanbas-light-gray-bg {
+    background-color: #f5f5f5;
+}
+
+.kanbas-white {
+    color: white;
+}
+
+.kanbas-sidebar-selected {
+    background-color: white;
+    color: #d41a2d;
+}
+
+.kanbas-sidebar-unselected {
+    background-color: black;
+    color: white;
+}
+
+.kanbas-sidebar {
+    width: 80px;
+    text-align: center;
+    background-color: black;
+}
+
+.kanbas-icon-padding {
+    margin: 4px;
+    padding: 4px;
+}
+
+.kanbas-sidebar-text {
+    font-size: 12px;
+}
+
+.kanbas-account {
+    width: 200px;
+    text-align: left;
+}
+
+.kanbas-account-selected {
+    border-left-style: solid;
+    border-left-width: 2px;
+    margin-left: -10px;
+    padding-left: 8px;
+}
+
+.kanbas-account-border {
+    border-style: none;
+    padding-top: -25px;
+    padding-bottom: -25px;
+    margin: -2px;
+}
+
+.kanbas-column {
+    float: left;
+    margin: 8px;
+}
+
+.kanbas-course-column {
+    width: 80%;
+}
+
+.kanbas-edit-column {
+    width: 60%;
+}
+
+.kanbas-account-icon {
+    font-size: 128px;
+}
+
+.kanbas-no-underline {
+    text-decoration: none;
+}
+
+.kanbas-hyperlink {
+    text-decoration: none;
+    color: #d41a2d;
+}
+
+.kanbas-item-width-400 {
+    width: 400px;
+}
+
+.kanbas-item-width-350 {
+    width: 350px;
+}
+
+.kanbas-item-width-300 {
+    width: 300px;
+}
+
+.kanbas-item-width-250 {
+    width: 250px;
+}
+
+.kanbas-item-width-200 {
+    width: 200px;
+}
+
+.kanbas-item-height-400 {
+    height: 400px;
+}
+
+.kanbas-item-height-200 {
+    height: 200px;
+}
+
+.kanbas-center-heading {
+    text-align: center;
+}
+
+.kanbas-save-profile {
+    color: white;
+    background-color: #d41a2d;
+}
+
+.kanbas-ellipsis {
+    color: white;
+    font-size: 24px;
+}
+
+.kanbas-card-container {
+    max-width: 100%;
+}
+
+.kanbas-card {
+    width: 260px;
+    margin: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb-item.active::before {
+    content: " > ";
+}
+
+.breadcrumb-item.kanbas-breadcrumb::before {
+    content: " > ";
+}
+
+.kanbas-module-header-padding {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.kanbas-module-padding {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.kanbas-text-left {
+    text-align: left;
+}
+
+.kanbas-text-right {
+    text-align: left;
+}
+
+.kanbas-module-icon {
+    margin-left: -50px;
+}
+
+.kanbas-assignment-margin {
+    padding-top: -20px;
+}
+
+.kanbas-assignment-icon {
+    font-size: 20px;
+    position: relative;
+    right: 40px;
+    bottom: 4px;
+    margin-right: -27px;
+}
+
+.kanbas-assignment-total {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.kanbas-assignment-border {
+    border-left-color: green;
+    border-left-width: 4px;
+}
+
+.kanbas-edit-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.kanbas-width-40 {
+    width: 40%;
+}
+
+.kanbas-width-45 {
+    width: 48%;
+}
+
+.kanbas-width-50 {
+    width: 50%;
+}
+
+.kanbas-until {
+    position: relative;
+    left: 68px;
+}
+
+.kanbas-edit-grade {
+    padding: 0px;
+}
+
+.kanbas-edit-margin {
+    margin-right: -100px;
+}
