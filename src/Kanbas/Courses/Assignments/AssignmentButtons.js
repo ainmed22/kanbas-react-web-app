@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
-import db from "../../Database";
+// import { Link, useParams } from "react-router-dom";
+// import db from "../../Database";
 import "../../../Vendors/kanbas.css";
 
 function AssignmentButtons() {

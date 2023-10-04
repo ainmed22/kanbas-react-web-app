@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom";
-import db from "../../../Kanbas/Database";
+// import { useParams } from "react-router-dom";
+// import db from "../../../Kanbas/Database";
 
 function ModuleButtons() {
     return (
