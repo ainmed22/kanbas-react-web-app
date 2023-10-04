@@ -3,8 +3,9 @@ import db from "../Database";
 import "../../Vendors/fontawesome-free-6.4.2-web/css/all.css"
 import "../../Vendors/kanbas.css";
 
+const { courses } = db;
+
 function Dashboard() {
-    const { courses } = db;
 
     return (
         <div className="kanbas-column" style={{ width: "75%" }}>

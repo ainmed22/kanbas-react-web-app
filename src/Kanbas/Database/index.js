@@ -5,6 +5,7 @@ import users from "./users.json";
 import enrollments from "./enrollments.json";
 import grades from "./grades.json";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
     courses,
     modules,
