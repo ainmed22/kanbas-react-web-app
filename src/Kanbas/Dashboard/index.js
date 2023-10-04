@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import db from "../Database";
 import "../../Vendors/fontawesome-free-6.4.2-web/css/all.css"
 import "../../Vendors/kanbas.css";
 
-const { courses } = db;
-
 function Dashboard() {
+    const { courses } = db;
+
     return (
         <div className="kanbas-column" style={{ width: "75%" }}>
             <h1>Dashboard</h1>
