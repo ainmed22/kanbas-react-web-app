@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import "../../Vendors/fontawesome-free-6.4.2-web/css/all.css"
 import "../../Vendors/kanbas.css";
 
