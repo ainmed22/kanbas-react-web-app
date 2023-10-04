@@ -1,5 +1,5 @@
-import db from "../../Database";
-import { useParams } from "react-router-dom";
+// import db from "../../Database";
+// import { useParams } from "react-router-dom";
 import GradeTable from "./GradeTable";
 import GradeButtons from "./GradeButtons";
 
