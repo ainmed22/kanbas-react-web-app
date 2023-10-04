@@ -1,0 +1,110 @@
+[
+    {
+        "_id": "58174321",
+        "name": "HTML Basics",
+        "description": "Create a basic HTML webpage with headings, paragraphs, and links.",
+        "course": "68159"
+    },
+    {
+        "_id": "29826789",
+        "name": "CSS Styling",
+        "description": "Style the HTML webpage using CSS to make it visually appealing.",
+        "course": "68159"
+    },
+    {
+        "_id": "19231456",
+        "name": "JavaScript Interactivity",
+        "description": "Add interactivity to the webpage using JavaScript, such as form validation.",
+        "course": "68159"
+    },
+    {
+        "_id": "56812347",
+        "name": "Machine Learning Basics",
+        "description": "Implement a linear regression model using Python and scikit-learn.",
+        "course": "12487"
+    },
+    {
+        "_id": "73498712",
+        "name": "Neural Networks",
+        "description": "Build a simple neural network for image classification using TensorFlow.",
+        "course": "12487"
+    },
+    {
+        "_id": "95327658",
+        "name": "Natural Language Processing",
+        "description": "Develop a text sentiment analysis model using NLP techniques.",
+        "course": "12487"
+    },
+    {
+        "_id": "61765243",
+        "name": "Cybersecurity Fundamentals",
+        "description": "Identify common vulnerabilities in a given network and propose mitigation strategies.",
+        "course": "56291"
+    },
+    {
+        "_id": "69824615",
+        "name": "Penetration Testing",
+        "description": "Conduct a penetration test on a simulated system and report findings.",
+        "course": "56291"
+    },
+    {
+        "_id": "23765984",
+        "name": "Cryptography",
+        "description": "Implement a basic encryption/decryption algorithm in Python.",
+        "course": "56291"
+    },
+    {
+        "_id": "89124683",
+        "name": "Exploiting Vulnerabilities",
+        "description": "Identify and exploit vulnerabilities in a provided system for educational purposes.",
+        "course": "94568"
+    },
+    {
+        "_id": "45378921",
+        "name": "Ethical Hacking Report",
+        "description": "Document the ethical hacking process and provide recommendations for security improvements.",
+        "course": "94568"
+    },
+    {
+        "_id": "36938247",
+        "name": "Secure Coding Practices",
+        "description": "Review and improve the security of a codebase by identifying and fixing vulnerabilities.",
+        "course": "94568"
+    },
+    {
+        "_id": "98321956",
+        "name": "Digital Logic Design",
+        "description": "Design and simulate basic digital logic circuits using a software tool.",
+        "course": "32874"
+    },
+    {
+        "_id": "45749812",
+        "name": "Sequential Circuits",
+        "description": "Implement sequential circuits with flip-flops and analyze their behavior.",
+        "course": "32874"
+    },
+    {
+        "_id": "32468159",
+        "name": "Microcontroller Programming",
+        "description": "Write assembly code to control a microcontroller and perform specific tasks.",
+        "course": "32874"
+    },
+    {
+        "_id": "49764238",
+        "name": "Assembly Language Basics",
+        "description": "Write simple assembly language programs to perform arithmetic operations.",
+        "course": "17643"
+    },
+    {
+        "_id": "85182937",
+        "name": "Microprocessor Interfacing",
+        "description": "Interface external devices with a microprocessor and write code for data transfer.",
+        "course": "17643"
+    },
+    {
+        "_id": "83687542",
+        "name": "Embedded Systems Project",
+        "description": "Develop a small embedded systems project using a microcontroller and peripherals.",
+        "course": "17643"
+    }
+]

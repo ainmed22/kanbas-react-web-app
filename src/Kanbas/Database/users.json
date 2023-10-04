@@ -1,0 +1,152 @@
+[
+  {
+    "_id": "130",
+    "username": "robert_johnson",
+    "password": "robertjohnson123",
+    "firstName": "Robert",
+    "lastName": "Johnson",
+    "email": "robert@example.com",
+    "dob": "1982-12-30",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "131",
+    "username": "sakura_tanaka",
+    "password": "sakuratanaka123",
+    "firstName": "Sakura",
+    "lastName": "Tanaka",
+    "email": "sakura@example.com",
+    "dob": "1985-03-22",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "132",
+    "username": "juan_gonzalez",
+    "password": "juangonzalez123",
+    "firstName": "Juan",
+    "lastName": "Gonzalez",
+    "email": "juan@example.com",
+    "dob": "1987-07-11",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "133",
+    "username": "lakshmi_patel",
+    "password": "lakshmipatel123",
+    "firstName": "Lakshmi",
+    "lastName": "Patel",
+    "email": "lakshmi@example.com",
+    "dob": "1982-12-30",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "134",
+    "username": "jing_li",
+    "password": "jingli123",
+    "firstName": "Jing",
+    "lastName": "Li",
+    "email": "jing@example.com",
+    "dob": "1993-05-18",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "135",
+    "username": "rafael_santos",
+    "password": "rafaelsantos123",
+    "firstName": "Rafael",
+    "lastName": "Santos",
+    "email": "rafael@example.com",
+    "dob": "1987-04-02",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "136",
+    "username": "mei_chan",
+    "password": "meichan123",
+    "firstName": "Mei",
+    "lastName": "Chan",
+    "email": "mei@example.com",
+    "dob": "1995-08-25",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "137",
+    "username": "michael_wilson",
+    "password": "michaelwilson123",
+    "firstName": "Michael",
+    "lastName": "Wilson",
+    "email": "michael@example.com",
+    "dob": "1984-11-05",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "138",
+    "username": "sophia_gomez",
+    "password": "sophiagomez123",
+    "firstName": "Sophia",
+    "lastName": "Gomez",
+    "email": "sophia@example.com",
+    "dob": "1991-06-14",
+    "role": "STUDENT"
+  },
+  {
+    "_id": "139",
+    "username": "mark_jackson",
+    "password": "markjackson123",
+    "firstName": "Mark",
+    "lastName": "Jackson",
+    "email": "mark@example.com",
+    "dob": "1986-02-08",
+    "role": "STUDENT"
+  },
+   {
+    "_id": "140",
+    "username": "emily_johnson",
+    "password": "emilyjohnson123",
+    "firstName": "Emily",
+    "lastName": "Johnson",
+    "email": "emily@example.com",
+    "dob": "1990-04-12",
+    "role": "FACULTY"
+  },
+  {
+    "_id": "141",
+    "username": "yusuf_ali",
+    "password": "yusufali123",
+    "firstName": "Yusuf",
+    "lastName": "Ali",
+    "email": "yusuf@example.com",
+    "dob": "1987-08-28",
+    "role": "FACULTY"
+  },
+  {
+    "_id": "142",
+    "username": "sarah_miller",
+    "password": "sarahmiller123",
+    "firstName": "Sarah",
+    "lastName": "Miller",
+    "email": "sarah@example.com",
+    "dob": "1983-11-19",
+    "role": "FACULTY"
+  },
+  {
+    "_id": "143",
+    "username": "juan_perez",
+    "password": "juanperez123",
+    "firstName": "Juan",
+    "lastName": "Perez",
+    "email": "juan@example.com",
+    "dob": "1992-06-15",
+    "role": "FACULTY"
+  },
+  {
+    "_id": "144",
+    "username": "olivia_smith",
+    "password": "oliviasmith123",
+    "firstName": "Olivia",
+    "lastName": "Smith",
+    "email": "olivia@example.com",
+    "dob": "1988-02-07",
+    "role": "FACULTY"
+  }
+]

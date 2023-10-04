@@ -3,11 +3,11 @@
 }
 
 .kanbas-red {
-    color: #d41a2d;
+    color: #d41a2d !important;
 }
 
 .kanbas-black {
-    color: black;
+    color: black !important;
 }
 
 .kanbas-green {
@@ -119,6 +119,14 @@
 
 .kanbas-item-width-200 {
     width: 200px;
+}
+
+.kanbas-item-width-150 {
+    width: 150px;
+}
+
+.kanbas-item-width-100 {
+    width: 100px;
 }
 
 .kanbas-item-height-400 {
@@ -234,4 +242,12 @@
 
 .kanbas-edit-margin {
     margin-right: -100px;
+}
+
+.kanbas-card-height {
+    height: 150px;
+}
+
+.kanbas-no-border {
+    border: none !important;
 }

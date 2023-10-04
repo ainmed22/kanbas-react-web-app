@@ -1,0 +1,44 @@
+[
+    {
+        "_id": "68159",
+        "name": "Web Development",
+        "number": "CS4562",
+        "startDate": "2023-02-10",
+        "endDate": "2023-06-15"
+    },
+    {
+        "_id": "12487",
+        "name": "Artificial Intelligence",
+        "number": "CS3563",
+        "startDate": "2022-09-05",
+        "endDate": "2023-01-10"
+    },
+    {
+        "_id": "56291",
+        "name": "Intro to Cybersecurity",
+        "number": "CY1571",
+        "startDate": "2023-04-15",
+        "endDate": "2023-08-20"
+    },
+    {
+        "_id": "94568",
+        "name": "Ethical Hacking",
+        "number": "CY3573",
+        "startDate": "2023-01-10",
+        "endDate": "2023-05-15"
+    },
+    {
+        "_id": "32874",
+        "name": "Digital Electronics",
+        "number": "CE2581",
+        "startDate": "2022-10-01",
+        "endDate": "2023-02-05"
+    },
+    {
+        "_id": "17643",
+        "name": "Microprocessor Systems",
+        "number": "CE4582",
+        "startDate": "2023-03-15",
+        "endDate": "2023-07-20"
+    }
+]

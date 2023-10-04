@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../../vendors/fontawesome-free-6.4.2-web/css/all.css"
-import "../../vendors/kanbas.css";
+import "../../Vendors/fontawesome-free-6.4.2-web/css/all.css"
+import "../../Vendors/kanbas.css";
 
 function KanbasNavigation() {
     const baseUrl = "#/Kanbas";
@@ -25,7 +25,7 @@ function KanbasNavigation() {
                 <a
                     key={index}
                     href={link.url}
-                    className={`list-group-item ${ pathname.includes(link.name) ? "kanbas-sidebar-selected" : "kanbas-sidebar-unselected" } kanbas-icon-padding`}
+                    className={`kanbas-no-underline ${ pathname.includes(link.name) ? "kanbas-sidebar-selected" : "kanbas-sidebar-unselected" } kanbas-icon-padding`}
                 >
                     <i className={link.iconClass}></i>
                     <br/>
