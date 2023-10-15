@@ -11,7 +11,8 @@ import StringStateVariables from "./StringStateVariables";
 import DateStateVariable from "./DateStateVariable";
 import ObjectStateVariable from "./ObjectStateVariable";
 import ArrayStateVariable from "./ArrayStateVariable";
-import ReduxExamples from "./redux-examples";
+import ReduxExamplesOld from "./redux-examples";
+import ReduxExamples from "./ReduxExamples";
 
 function Assignment4() {
     
@@ -35,6 +36,7 @@ function Assignment4() {
             <ObjectStateVariable/>
             <ArrayStateVariable/>
             <ReduxExamples/>
+            <ReduxExamplesOld/>
         </div>
     );
 }

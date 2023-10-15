@@ -8,11 +8,11 @@ import Todos from "./todos-component";
 
 const store = configureStore({ reducer: { hello, todos } });
 
-const ReduxExamples = () => {
+const ReduxExamplesOld = () => {
     return (
         <Provider store={store}>
             <div>
-                <h2>Redux Examples</h2>
+                <h2>Redux Examples Old</h2>
                 <Todos/>
                 <HelloReduxExampleComponent/>
             </div>
@@ -20,4 +20,4 @@ const ReduxExamples = () => {
     );
 };
 
-export default ReduxExamples;
+export default ReduxExamplesOld;

@@ -9,7 +9,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
     return (
         <div className="kanbas-column" style={{ width: "75%" }}>
             <h1>Dashboard</h1>
-            <hr />
+            <hr/>
             <h5>Course</h5>
             <input
                 value={course.name}
@@ -42,7 +42,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
             </button>
             
             <h2>Published Courses ({courses.length})</h2>
-            <hr />
+            <hr/>
             <div className="d-flex flex-row flex-wrap">
                 {courses.map((course, index) => (
                     <a href={`../#/Kanbas/Courses/${course._id}`} className="kanbas-card" key={course._id}>
