@@ -7,12 +7,12 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 
-function Courses() {
+function Courses({ courses }) {
     const { courseId } = useParams();
-    const course = db.courses.find((course) => course._id === courseId);
+    const course = courses.find((course) => course._id === courseId);
     return (
         <div>
-            <h1 className="mt-3 ms-3">{course.number} {course.name}</h1>
+            <h1 className="mt-3 ms-3">{course ? `${course.number} ${course.name}` : 'COURSE NOT FOUND'}</h1>
             <CourseNavigation/>
             <div>
                 <div
