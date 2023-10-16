@@ -2,9 +2,17 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import ModuleButtons from "./ModuleButtons";
+import { useSelector, useDispatch } from "react-redux";
+import { addModule, deleteModule, updateModule, setModule } from "./modulesReducer";
 
 function ModuleList() {
     const { courseId } = useParams();
+    
+    const modules = useSelector((state) => state.modulesReducer.modules);
+    const module = useSelector((state) => state.modulesReducer.module);
+    const dispatch = useDispatch();
+    
+    /*
     const filteredModules = db.modules.filter((module) => module.course === courseId);
     const [modules, setModules] = useState(filteredModules);
 
@@ -36,6 +44,7 @@ function ModuleList() {
             })
         );
     };
+    */
 
     return (
         <div>
@@ -44,25 +53,19 @@ function ModuleList() {
             
             <li className="list-group-item">
                 <button className="btn btn-success mb-2 me-2"
-                    onClick={() => { addModule(module) }}>
+                    onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
                     Add
                 </button>
-                <button className="btn btn-light mb-2 me-2"
-                    onClick={updateModule}>
+                <button className="btn btn-warning mb-2 me-2"
+                    onClick={() => dispatch(updateModule(module))}>
                     Update
                 </button>
                 <input className="form-control mb-2" 
                     value={module.name}
-                    onChange={(e) => setModule({
-                        ...module, name: e.target.value
-                    })}
-                />
+                    onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}/>
                 <textarea className="form-control mb-2" 
                     value={module.description}
-                    onChange={(e) => setModule({
-                        ...module, description: e.target.value
-                    })}
-                />
+                    onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}/>
             </li>
             
             <ul className="list-group">
@@ -75,25 +78,27 @@ function ModuleList() {
                     </div>
                 </li>
                 
-                {modules.map((module, index) => (
+                {modules
+                    .filter((module) => module.course === courseId)
+                    .map((module, index) => (
                     <li key={index} className="list-group-item kanbas-module-padding">
                         <div>
                             <i className="fa fa-ellipsis-vertical float-end mt-1"></i>
                             <i className="fa fa-circle-check float-end mt-1 me-3 kanbas-green ps-5"></i>
                             <b>{module.name}</b><br/>
                             {module.description}
-                        </div>
-                      
-                        <button className="btn btn-danger float-end"
-                            onClick={() => deleteModule(module._id)}>
-                            Delete
-                        </button>
+                            
+                            <button className="btn btn-danger float-end mt-2"
+                                onClick={() => dispatch(deleteModule(module._id))}>
+                                Delete
+                            </button>
+                            
+                            <button className="btn btn-primary float-end me-2 mt-2"
+                                onClick={() => dispatch(setModule(module))}>
+                                Edit
+                            </button>
                         
-                        <button className="btn btn-light float-end me-2"
-                            onClick={(event) => { setModule(module); }}>
-                            Edit
-                        </button>
-
+                        </div>
                     </li>
                 ))}
             </ul>
