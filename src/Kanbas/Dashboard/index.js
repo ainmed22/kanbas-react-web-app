@@ -10,37 +10,40 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
         <div className="kanbas-column" style={{ width: "75%" }}>
             <h1>Dashboard</h1>
             <hr/>
-            <h5>Course</h5>
-            <input
-                value={course.name}
-                className="form-control mb-2"
-                onChange={(e) => setCourse({ ...course, name: e.target.value })}
-            />
-            <input
-                value={course.number}
-                className="form-control mb-2"
-                onChange={(e) => setCourse({ ...course, number: e.target.value })}
-            />
-            <input
-                value={course.startDate}
-                className="form-control mb-2"
-                type="date"
-                onChange={(e) => setCourse({ ...course, startDate: e.target.value })}
-            />
-            <input
-                value={course.endDate}
-                className="form-control mb-2"
-                type="date"
-                onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
-            />
             
-            <button onClick={addNewCourse} className="btn btn-success mb-2 me-2">
-                Add
-            </button>
-            
-            <button onClick={updateCourse} className="btn btn-warning mb-2 me-2">
-                Update
-            </button>
+            <div className="mb-2">
+                <h5>Course Modification</h5>
+                <input
+                    value={course.name}
+                    className="form-control mb-2"
+                    onChange={(e) => setCourse({ ...course, name: e.target.value })}
+                />
+                <input
+                    value={course.number}
+                    className="form-control mb-2"
+                    onChange={(e) => setCourse({ ...course, number: e.target.value })}
+                />
+                <input
+                    value={course.startDate}
+                    className="form-control mb-2"
+                    type="date"
+                    onChange={(e) => setCourse({ ...course, startDate: e.target.value })}
+                />
+                <input
+                    value={course.endDate}
+                    className="form-control mb-2"
+                    type="date"
+                    onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
+                />
+                
+                <button onClick={addNewCourse} className="btn btn-success mb-2 me-2">
+                    Add
+                </button>
+                
+                <button onClick={updateCourse} className="btn btn-warning mb-2 me-2">
+                    Update
+                </button>
+            </div>
             
             <h2>Published Courses ({courses.length})</h2>
             <hr/>
