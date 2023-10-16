@@ -1,4 +1,5 @@
-import { useSelector, useDispatch } from "react-redux";
+// import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 function HelloRedux() {
     const { message } = useSelector((state) => state.helloReducer);
