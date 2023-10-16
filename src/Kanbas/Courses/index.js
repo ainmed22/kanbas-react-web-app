@@ -12,7 +12,7 @@ function Courses({ courses }) {
     const course = courses.find((course) => course._id === courseId);
     return (
         <div>
-            <h1 className="mt-3 ms-3">{course ? `${course.number} ${course.name}` : 'COURSE NOT FOUND'}</h1>
+            <h1 className="mt-3 ms-3">{course ? `${course.number} ${course.name}` : 'COURSE NOT FOUND IN DATABASE'}</h1>
             <CourseNavigation/>
             <div>
                 <div
