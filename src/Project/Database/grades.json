@@ -1,0 +1,182 @@
+[
+  {
+    "_id": "1",
+    "student": "130",
+    "assignment": "51784321",
+    "grade": "90"
+  },
+  {
+    "_id": "2",
+    "student": "130",
+    "assignment": "25317654",
+    "grade": "85"
+  },
+  {
+    "_id": "3",
+    "student": "130",
+    "assignment": "10457123",
+    "grade": "95"
+  },
+  {
+    "_id": "4",
+    "student": "131",
+    "assignment": "95368432",
+    "grade": "75"
+  },
+  {
+    "_id": "5",
+    "student": "131",
+    "assignment": "79462011",
+    "grade": "73"
+  },
+  {
+    "_id": "6",
+    "student": "131",
+    "assignment": "86542087",
+    "grade": "71"
+  },
+  {
+    "_id": "7",
+    "student": "132",
+    "assignment": "64923784",
+    "grade": "92"
+  },
+  {
+    "_id": "8",
+    "student": "132",
+    "assignment": "39658679",
+    "grade": "83"
+  },
+  {
+    "_id": "9",
+    "student": "132",
+    "assignment": "31874124",
+    "grade": "72"
+  },
+  {
+    "_id": "10",
+    "student": "133",
+    "assignment": "98267123",
+    "grade": "92"
+  },
+  {
+    "_id": "11",
+    "student": "133",
+    "assignment": "13978065",
+    "grade": "82"
+  },
+  {
+    "_id": "12",
+    "student": "133",
+    "assignment": "51836021",
+    "grade": "80"
+  },
+  {
+    "_id": "13",
+    "student": "134",
+    "assignment": "98267123",
+    "grade": "88"
+  },
+  {
+    "_id": "14",
+    "student": "134",
+    "assignment": "72189765",
+    "grade": "79"
+  },
+  {
+    "_id": "15",
+    "student": "134",
+    "assignment": "83962012",
+    "grade": "93"
+  },
+  {
+    "_id": "16",
+    "student": "135",
+    "assignment": "46782765",
+    "grade": "85"
+  },
+  {
+    "_id": "17",
+    "student": "135",
+    "assignment": "79462011",
+    "grade": "78"
+  },
+  {
+    "_id": "18",
+    "student": "135",
+    "assignment": "86542087",
+    "grade": "88"
+  },
+  {
+    "_id": "19",
+    "student": "136",
+    "assignment": "51784321",
+    "grade": "90"
+  },
+  {
+    "_id": "20",
+    "student": "136",
+    "assignment": "25317654",
+    "grade": "85"
+  },
+  {
+    "_id": "21",
+    "student": "136",
+    "assignment": "10457123",
+    "grade": "80"
+  },
+  {
+    "_id": "22",
+    "student": "137",
+    "assignment": "83962012",
+    "grade": "75"
+  },
+  {
+    "_id": "23",
+    "student": "137",
+    "assignment": "79462011",
+    "grade": "73"
+  },
+  {
+    "_id": "24",
+    "student": "137",
+    "assignment": "86542087",
+    "grade": "71"
+  },
+  {
+    "_id": "25",
+    "student": "138",
+    "assignment": "64923784",
+    "grade": "92"
+  },
+  {
+    "_id": "26",
+    "student": "138",
+    "assignment": "72189765",
+    "grade": "83"
+  },
+  {
+    "_id": "27",
+    "student": "138",
+    "assignment": "62541984",
+    "grade": "72"
+  },
+  {
+    "_id": "28",
+    "student": "139",
+    "assignment": "95368432",
+    "grade": "75"
+  },
+  {
+    "_id": "29",
+    "student": "139",
+    "assignment": "13978065",
+    "grade": "73"
+  },
+  {
+    "_id": "30",
+    "student": "139",
+    "assignment": "51836021",
+    "grade": "71"
+  }
+]
