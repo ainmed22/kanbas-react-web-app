@@ -1,152 +1,98 @@
 [
   {
-    "_id": "130",
+    "_id": "101",
     "username": "robert_johnson",
     "password": "robertjohnson123",
     "firstName": "Robert",
     "lastName": "Johnson",
     "email": "robert@example.com",
     "dob": "1982-12-30",
-    "role": "STUDENT"
+    "role": "NORMAL",
+    "description": "I'm Robert, and I'm an avid gamer who loves exploring virtual worlds and completing challenging quests in my free time.",
+    "following": ["102", "104", "105", "111"]
   },
   {
-    "_id": "131",
+    "_id": "102",
     "username": "sakura_tanaka",
     "password": "sakuratanaka123",
     "firstName": "Sakura",
     "lastName": "Tanaka",
     "email": "sakura@example.com",
     "dob": "1985-03-22",
-    "role": "STUDENT"
+    "role": "NORMAL",
+    "description": "Hey, I'm Sakura, and I'm a passionate gamer. I love competing in online multiplayer games and making new friends in the gaming community.",
+    "following": ["101", "103", "111", "112"]
   },
   {
-    "_id": "132",
+    "_id": "103",
     "username": "juan_gonzalez",
     "password": "juangonzalez123",
     "firstName": "Juan",
     "lastName": "Gonzalez",
     "email": "juan@example.com",
     "dob": "1987-07-11",
-    "role": "STUDENT"
+    "role": "NORMAL",
+    "description": "I'm Juan, and gaming is my passion. I find solace in single-player adventure games, where I can immerse myself in epic storytelling.",
+    "following": ["101", "104", "113"]
   },
   {
-    "_id": "133",
+    "_id": "104",
     "username": "lakshmi_patel",
     "password": "lakshmipatel123",
     "firstName": "Lakshmi",
     "lastName": "Patel",
     "email": "lakshmi@example.com",
     "dob": "1982-12-30",
-    "role": "STUDENT"
+    "role": "NORMAL",
+    "description": "I'm Lakshmi, and gaming is my thing. I enjoy both casual and competitive gaming, often organizing gaming nights with friends.",
+    "following": ["102", "105", "111", "112"]
   },
   {
-    "_id": "134",
+    "_id": "105",
     "username": "jing_li",
     "password": "jingli123",
     "firstName": "Jing",
     "lastName": "Li",
     "email": "jing@example.com",
     "dob": "1993-05-18",
-    "role": "STUDENT"
+    "role": "NORMAL",
+    "description": "I'm Jing, and I'm a hardcore gamer. I embrace a variety of gaming genres and am always up for a challenging raid or a thrilling match.",
+    "following": ["101", "103", "104"]
   },
   {
-    "_id": "135",
-    "username": "rafael_santos",
-    "password": "rafaelsantos123",
-    "firstName": "Rafael",
-    "lastName": "Santos",
-    "email": "rafael@example.com",
-    "dob": "1987-04-02",
-    "role": "STUDENT"
-  },
-  {
-    "_id": "136",
-    "username": "mei_chan",
-    "password": "meichan123",
-    "firstName": "Mei",
-    "lastName": "Chan",
-    "email": "mei@example.com",
-    "dob": "1995-08-25",
-    "role": "STUDENT"
-  },
-  {
-    "_id": "137",
-    "username": "michael_wilson",
-    "password": "michaelwilson123",
-    "firstName": "Michael",
-    "lastName": "Wilson",
-    "email": "michael@example.com",
-    "dob": "1984-11-05",
-    "role": "STUDENT"
-  },
-  {
-    "_id": "138",
-    "username": "sophia_gomez",
-    "password": "sophiagomez123",
-    "firstName": "Sophia",
-    "lastName": "Gomez",
-    "email": "sophia@example.com",
-    "dob": "1991-06-14",
-    "role": "STUDENT"
-  },
-  {
-    "_id": "139",
-    "username": "mark_jackson",
-    "password": "markjackson123",
-    "firstName": "Mark",
-    "lastName": "Jackson",
-    "email": "mark@example.com",
-    "dob": "1986-02-08",
-    "role": "STUDENT"
-  },
-   {
-    "_id": "140",
+    "_id": "111",
     "username": "emily_johnson",
     "password": "emilyjohnson123",
     "firstName": "Emily",
     "lastName": "Johnson",
     "email": "emily@example.com",
     "dob": "1990-04-12",
-    "role": "FACULTY"
+    "role": "ADMIN",
+    "description": "I'm Emily, and I'm the gaming admin. I manage the gaming community and ensure smooth, fair, and fun experiences for all players.",
+    "following": ["101", "102", "103"]
   },
   {
-    "_id": "141",
+    "_id": "112",
     "username": "yusuf_ali",
     "password": "yusufali123",
     "firstName": "Yusuf",
     "lastName": "Ali",
     "email": "yusuf@example.com",
     "dob": "1987-08-28",
-    "role": "FACULTY"
+    "role": "ADMIN",
+    "description": "I'm Yusuf, and I'm a gaming admin. I ensure that the gaming servers run smoothly and address any technical issues promptly.",
+    "following": ["104", "105", "113"]
   },
   {
-    "_id": "142",
+    "_id": "113",
     "username": "sarah_miller",
     "password": "sarahmiller123",
     "firstName": "Sarah",
     "lastName": "Miller",
     "email": "sarah@example.com",
     "dob": "1983-11-19",
-    "role": "FACULTY"
-  },
-  {
-    "_id": "143",
-    "username": "juan_perez",
-    "password": "juanperez123",
-    "firstName": "Juan",
-    "lastName": "Perez",
-    "email": "juan@example.com",
-    "dob": "1992-06-15",
-    "role": "FACULTY"
-  },
-  {
-    "_id": "144",
-    "username": "olivia_smith",
-    "password": "oliviasmith123",
-    "firstName": "Olivia",
-    "lastName": "Smith",
-    "email": "olivia@example.com",
-    "dob": "1988-02-07",
-    "role": "FACULTY"
+    "role": "ADMIN",
+    "description": "I'm Sarah, and I'm an enthusiastic gaming admin. I organize gaming events, tournaments, and foster a welcoming gaming community.",
+    "following": ["102", "104", "112"]
   }
 ]

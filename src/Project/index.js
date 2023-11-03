@@ -1,7 +1,7 @@
 // import {Link} from "react-router-dom";
 // import Nav from '../Nav';
 import React from "react";
-import KanbasNavigation from "./KanbasNavigation";
+import Navigation from "./Navigation";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
@@ -9,8 +9,21 @@ import db from "./Database";
 import { useState } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
+import Home from "./Home";
+import Profile from "./Profile";
+import UserSwitcher from "./UserSwitcher";
 
 function Project() {
+    
+    /*
+    const [users, setUsers] = useState(db.users);
+    const [games, setGames] = useState(db.games);
+    const [reviews, setReviews] = useState(db.reviews);
+    */
+    
+    const [users] = useState(db.users);
+    const [games] = useState(db.games);
+    const [reviews] = useState(db.reviews);
     
     const [courses, setCourses] = useState(db.courses);
     
@@ -45,11 +58,25 @@ function Project() {
     
     return (
         <Provider store={store}>
+            <UserSwitcher/>
             <div className="d-flex">
-                <KanbasNavigation/>
+                <Navigation/>
                 <div>
                     <Routes>
-                        <Route path="/" element={<Navigate to="Dashboard" />} />
+                        <Route path="/" element={<Navigate to="Home" />} />
+                        <Route path="Home" element={
+                            <Home
+                                users={users}
+                                games={games}
+                                reviews={reviews}/>
+                        } />
+                        <Route path="Profile/:userId/" element={
+                            <Profile/>
+                        } />
+                        <Route path="Profile" element={
+                            <Profile/>
+                        } />
+                        
                         <Route path="Dashboard" element={
                             <Dashboard
                                 courses={courses}
@@ -60,6 +87,10 @@ function Project() {
                                 updateCourse={updateCourse}/>
                         } />
                         <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
+                        <Route
+                          path="Courses"
+                          element={<Navigate to={`${courses[0]._id}`} />}
+                        />
                     </Routes>
                 </div>
             </div>

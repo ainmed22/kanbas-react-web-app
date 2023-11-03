@@ -35,6 +35,11 @@
     color: #d41a2d;
 }
 
+.project-sidebar-selected {
+    background-color: white;
+    color: black;
+}
+
 .kanbas-sidebar-unselected {
     background-color: black;
     color: white;
@@ -45,6 +50,12 @@
     width: 80px;
     text-align: center;
     background-color: black;
+}
+
+.project-sidebar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .kanbas-icon-padding {

@@ -49,7 +49,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
             <hr/>
             <div className="d-flex flex-row flex-wrap">
                 {courses.map((course, index) => (
-                    <a href={`../#/Kanbas/Courses/${course._id}`} className="kanbas-card" key={course._id}>
+                    <a href={`../#/Project/Courses/${course._id}`} className="kanbas-card" key={course._id}>
                         <div className="card">
                             <div className={`card-header bg-${getCourseColor(index)}`}>
                                 <i className="fa fa-ellipsis-vertical float-end kanbas-ellipsis"></i>
