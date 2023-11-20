@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-import db from "../Database";
+// import * as client from "../client";
 
 const initialState = {
-    users: db.users,
     selectedUser: null,
 };
+
+// client.readUsers().then((response) => { initialState.users = response; })
 
 const usersSlice = createSlice({
     name: "users",

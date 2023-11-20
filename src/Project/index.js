@@ -3,28 +3,29 @@
 import React from "react";
 import Navigation from "./Navigation";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Dashboard from "./Dashboard";
-import Courses from "./Courses";
-import db from "./Database";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import Home from "./Home";
 import Profile from "./Profile";
 import UserSwitcher from "./UserSwitcher";
+import * as client from "./client";
+import Search from "./Search";
+import Game from "./Game";
 
 function Project() {
     
+    const [games, setGames] = useState([]);
+    const [reviews, setReviews] = useState([]);
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        client.readGames().then((response) => { setGames(response); })
+        client.readReviews().then((response) => { setReviews(response); })
+        client.readUsers().then((response) => { setUsers(response); })
+    }); // , [courseId]);
+    
     /*
-    const [users, setUsers] = useState(db.users);
-    const [games, setGames] = useState(db.games);
-    const [reviews, setReviews] = useState(db.reviews);
-    */
-    
-    const [users] = useState(db.users);
-    const [games] = useState(db.games);
-    const [reviews] = useState(db.reviews);
-    
     const [courses, setCourses] = useState(db.courses);
     
     const [course, setCourse] = useState({
@@ -55,10 +56,11 @@ function Project() {
             })
         );
     };
+    */
     
     return (
         <Provider store={store}>
-            <UserSwitcher/>
+            <UserSwitcher users={users} />
             <div className="d-flex">
                 <Navigation/>
                 <div>
@@ -71,26 +73,20 @@ function Project() {
                                 reviews={reviews}/>
                         } />
                         <Route path="Profile/:userId/" element={
-                            <Profile/>
+                            <Profile users={users} games={games} reviews={reviews} />
                         } />
                         <Route path="Profile" element={
-                            <Profile/>
+                            <Profile users={users} games={games} reviews={reviews} />
                         } />
-                        
-                        <Route path="Dashboard" element={
-                            <Dashboard
-                                courses={courses}
-                                course={course}
-                                setCourse={setCourse}
-                                addNewCourse={addNewCourse}
-                                deleteCourse={deleteCourse}
-                                updateCourse={updateCourse}/>
+                        <Route path="Search" element={
+                            <Search users={users} games={games} reviews={reviews} />
                         } />
-                        <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
-                        <Route
-                          path="Courses"
-                          element={<Navigate to={`${courses[0]._id}`} />}
-                        />
+                        <Route path="Search/:query/:page/" element={
+                            <Search users={users} games={games} reviews={reviews} />
+                        } />
+                        <Route path="Game/:gameID/" element={
+                            <Game users={users} games={games} reviews={reviews} />
+                        } />
                     </Routes>
                 </div>
             </div>

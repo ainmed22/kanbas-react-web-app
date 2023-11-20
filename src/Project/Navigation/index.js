@@ -9,8 +9,6 @@ function Navigation() {
         { name: "Home", url: `${baseUrl}/Home`, iconClass: "fa fa-house kanbas-gray" },
         { name: "Profile", url: `${baseUrl}/Profile`, iconClass: "fa fa-user kanbas-gray" },
         { name: "Search", url: `${baseUrl}/Search`, iconClass: "fa fa-magnifying-glass kanbas-gray" },
-        { name: "Dashboard", url: `${baseUrl}/Dashboard`, iconClass: "fa fa-clock kanbas-gray" },
-        { name: "Courses", url: `${baseUrl}/Courses`, iconClass: "fa fa-book kanbas-gray" }
     ];
 
     const { pathname } = useLocation();

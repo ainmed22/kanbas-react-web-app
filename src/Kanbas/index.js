@@ -10,6 +10,8 @@ import { useState, useEffect } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
+import Signin from "./users/signin";
+import Account from "./users/account";
 
 function Kanbas() {
     
@@ -18,8 +20,8 @@ function Kanbas() {
     const API_BASE = process.env.REACT_APP_API_BASE;
     const URL = `${API_BASE}/api/courses`;
     
-    console.log("penis music");
-    console.log(API_BASE);
+    // console.log("api base stuff");
+    // console.log(API_BASE);
     
     const addNewCourse = async () => {
         const response = await axios.post(URL, course);
@@ -116,6 +118,8 @@ function Kanbas() {
                                 updateCourse={updateCourse}/>
                         } />
                         <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
+                        <Route path="/signin" element={<Signin />} />
+                        <Route path="/account" element={<Account />} />
                     </Routes>
                 </div>
             </div>
