@@ -13,6 +13,19 @@ export const signin = async (credentials) => {
     console.log(response.data);
     console.log(response);
     console.log("response");
+
+    const setCookieHeader = response.headers['set-cookie'];
+    if (setCookieHeader) {
+        // Extract the cookie value from the Set-Cookie header
+        const cookieValue = setCookieHeader[0].split(';')[0];
+
+        // Set the cookie on the client side
+        document.cookie = cookieValue;
+
+        // Log the cookie value (optional)
+        console.log("Cookie set:", cookieValue);
+    }
+    
     return response.data;
 };
 
