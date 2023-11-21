@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectUser } from '../store/usersReducer';
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const UserSwitcher = ({ users }) => {
     const selectedUser = useSelector(state => state.usersReducer.selectedUser);

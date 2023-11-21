@@ -33,7 +33,7 @@ function Account() {
         } else {
             fetchAccount();
         }
-    }, []);
+    }, [id]);
 
     return (
         <div className="container mt-3">
