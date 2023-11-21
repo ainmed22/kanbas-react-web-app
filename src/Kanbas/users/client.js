@@ -25,6 +25,8 @@ export const signin = async (credentials) => {
         // Log the cookie value (optional)
         console.log("Cookie set:", cookieValue);
     }
+
+    console.log("Cookie set?");
     
     return response.data;
 };
