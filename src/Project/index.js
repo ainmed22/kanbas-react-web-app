@@ -18,45 +18,18 @@ function Project() {
     const [games, setGames] = useState([]);
     const [reviews, setReviews] = useState([]);
     const [users, setUsers] = useState([]);
-
+    
     useEffect(() => {
-        client.readGames().then((response) => { setGames(response); })
-        client.readReviews().then((response) => { setReviews(response); })
-        client.readUsers().then((response) => { setUsers(response); })
-    }); // , [courseId]);
-    
-    /*
-    const [courses, setCourses] = useState(db.courses);
-    
-    const [course, setCourse] = useState({
-        name: "New Course",
-        number: "New Number",
-        startDate: "2023-09-10",
-        endDate: "2023-12-15",
-    });
-    
-    const addNewCourse = () => {
-        const randomId = Math.floor(10000 + Math.random() * 90000); // Generate a random 5-digit number
-        setCourses([...courses, { ...course, _id: randomId }]);
-        // setCourses([...courses, { ...course, _id: new Date().getTime() }]);
-    };
-    
-    const deleteCourse = (courseId) => {
-        setCourses(courses.filter((course) => course._id !== courseId));
-    };
-    
-    const updateCourse = () => {
-        setCourses(
-            courses.map((c) => {
-                if (c._id === course._id) {
-                    return course;
-                } else {
-                    return c;
-                }
-            })
-        );
-    };
-    */
+        const fetchData = async () => {
+            client.readGames().then((response) => { setGames(response); })
+            client.readReviews().then((response) => { setReviews(response); })
+            client.readUsers().then((response) => { setUsers(response); })
+        };
+
+        fetchData();
+        const intervalId = setInterval(fetchData, 1000);
+        return () => clearInterval(intervalId);
+    }, []);
     
     return (
         <Provider store={store}>

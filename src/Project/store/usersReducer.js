@@ -5,8 +5,6 @@ const initialState = {
     selectedUser: null,
 };
 
-// client.readUsers().then((response) => { initialState.users = response; })
-
 const usersSlice = createSlice({
     name: "users",
     initialState,

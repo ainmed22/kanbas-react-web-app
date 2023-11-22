@@ -1,51 +1,76 @@
 import axios from "axios";
+
 const API_BASE = process.env.REACT_APP_API_BASE;
 const GAMES_URL = `${API_BASE}/api/project/games`;
 const REVIEWS_URL = `${API_BASE}/api/project/reviews`;
 const USERS_URL = `${API_BASE}/api/project/users`;
 
+const request = axios.create({
+    withCredentials: true,
+});
+
 export const readGames = async () => {
-    const response = await axios.get(GAMES_URL);
+    const response = await request.get(GAMES_URL);
     return response.data;
 };
 
 export const readReviews = async () => {
-    const response = await axios.get(REVIEWS_URL);
+    const response = await request.get(REVIEWS_URL);
     return response.data;
 };
 
 export const readUsers = async () => {
-    const response = await axios.get(USERS_URL);
+    const response = await request.get(USERS_URL);
     return response.data;
 };
 
 export const updateUser = async (user) => {
-    const response = await axios.put(`${USERS_URL}/${user._id}`, user);
+    const response = await request.put(`${USERS_URL}/${user._id}`, user);
     return response.data;
 };
 
 export const followUser = async (follower, following) => {
-    const response = await axios.put(`${USERS_URL}/${following._id}/follow`, follower);
+    const response = await request.put(`${USERS_URL}/${following._id}/follow`, follower);
     return response.data;
 };
 
 export const unfollowUser = async (follower, following) => {
-    const response = await axios.put(`${USERS_URL}/${following._id}/unfollow`, follower);
+    const response = await request.put(`${USERS_URL}/${following._id}/unfollow`, follower);
     return response.data;
 };
 
 export const createReview = async (review) => {
-    const response = await axios.post(`${REVIEWS_URL}`, review);
+    const response = await request.post(`${REVIEWS_URL}`, review);
     return response.data;
 };
 
 export const updateReview = async (review) => {
-    const response = await axios.put(`${REVIEWS_URL}`, review);
+    const response = await request.put(`${REVIEWS_URL}`, review);
     return response.data;
 };
 
 export const deleteReview = async (reviewID) => {
-    const response = await axios.delete(`${REVIEWS_URL}/${reviewID}`);
+    const response = await request.delete(`${REVIEWS_URL}/${reviewID}`);
+    return response.data;
+};
+
+export const signup = async (credentials) => {
+    const response = await request.post(`${USERS_URL}/signup`, credentials);
+    return response.data;
+};
+
+export const signin = async (credentials) => {
+    const response = await request.post(`${USERS_URL}/signin`, credentials);
+    return response.data;
+};
+
+export const signout = async () => {
+    const response = await request.post(`${USERS_URL}/signout`);
+    return response.data;
+};
+
+export const account = async () => {
+    const response = await request.post(`${USERS_URL}/account`);
     return response.data;
 };
 

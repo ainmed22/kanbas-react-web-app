@@ -2,7 +2,6 @@ import * as client from "./client";
 import { useState, useEffect } from "react";
 import { useNavigate, Link, useParams } from "react-router-dom";
 
-
 function Account() {
     const { id } = useParams();
     const [account, setAccount] = useState(null);

@@ -129,54 +129,47 @@ function Profile({ users, reviews, games }) {
                         {editing && (
                             <div className="mb-2 mt-4">
                                 <h5>Modify Profile Information</h5>
-                                <div className="form-group row">
-                                    <label for="username" className="col-sm-2 col-form-label">Username:</label>
-                                    <div className="col-sm-10">
-                                        <input
-                                            id="username"
-                                            value={username}
-                                            className="form-control mb-2"
-                                            onChange={(e) => setUsername(e.target.value)}
-                                        />
-                                    </div>
+                                
+                                <label for="username" className="col-form-label">Username:</label>
+                                <div>
+                                    <input
+                                        id="username"
+                                        value={username}
+                                        className="form-control mb-2"
+                                        onChange={(e) => setUsername(e.target.value)}
+                                    />
                                 </div>
 
-                                <div className="form-group row">
-                                    <label for="email" className="col-sm-2 col-form-label">Email:</label>
-                                    <div className="col-sm-10">
-                                        <input
-                                            id="email"
-                                            value={email}
-                                            className="form-control mb-2"
-                                            onChange={(e) => setEmail(e.target.value)}
-                                        />
-                                    </div>
+                                <label for="email" className="col-form-label">Email:</label>
+                                <div>
+                                    <input
+                                        id="email"
+                                        value={email}
+                                        className="form-control mb-2"
+                                        onChange={(e) => setEmail(e.target.value)}
+                                    />
                                 </div>
 
-                                <div className="form-group row">
-                                    <label for="dob" className="col-sm-2 col-form-label">Date of Birth:</label>
-                                    <div className="col-sm-10">
-                                        <input
-                                            id="dob"
-                                            value={dob}
-                                            className="form-control mb-2"
-                                            type="date"
-                                            onChange={(e) => setDob(e.target.value)}
-                                        />
-                                    </div>
+                                <label for="dob" className="col-form-label">Date of Birth:</label>
+                                <div>
+                                    <input
+                                        id="dob"
+                                        value={dob}
+                                        className="form-control mb-2"
+                                        type="date"
+                                        onChange={(e) => setDob(e.target.value)}
+                                    />
                                 </div>
 
-                                <div className="form-group row">
-                                    <label for="description" className="col-sm-2 col-form-label">Description:</label>
-                                    <div className="col-sm-10">
-                                        <textarea
-                                            id="description"
-                                            value={description}
-                                            className="form-control mb-2"
-                                            rows="4"
-                                            onChange={(e) => setDescription(e.target.value)}
-                                        />
-                                    </div>
+                                <label for="description" className="col-form-label">Description:</label>
+                                <div>
+                                    <textarea
+                                        id="description"
+                                        value={description}
+                                        className="form-control mb-2"
+                                        rows="4"
+                                        onChange={(e) => setDescription(e.target.value)}
+                                    />
                                 </div>
                             </div>
                         )}
